@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.limita-largura {
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* === TOPO === */
+
+.topo-bg {
+    background-color:#1885CD;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo img {
+    width: 70px;
+    object-fit: contain;
+    margin: 15px;
+}
+
+.navegacao a{
+    color: #bfe1ff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 25px;
+    transition: border-bottom 0.1s ease-in-out 0ms;
+}
+
+.navegacao a:hover {
+    color: #ffffff;
+    border-bottom: 3px solid #FFF;
+}
+
+/* === BEM VINDO === */
+
+.bem-vindo:not(h1) {
+    width: 100%;
+    height: 500px;
+    background-image: url("assets/imagem-bem-vindo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #E2F0FC;
+    font-size: 30px;
+    font-weight: 600;
+    width: 90%;
+}
+
+.txt-bem-vindo {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* === ANUNCIO UM === */
+
+.anuncio-1 {
+    background-color: #83C7F5;
+}
+
+.anuncio {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-anuncio {
+    color: #0C2945;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.botao {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0E4D7E;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.514);
+    color: #E2F0FC;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out 0ms;
+}
+
+.botao:hover {
+    transform: scale(1.07);
+}
