@@ -84,6 +84,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .txt-anuncio {
@@ -111,3 +112,211 @@ h1 {
 .botao:hover {
     transform: scale(1.07);
 }
+
+/* === MAIN === */
+
+/* == SERVICOS == */
+
+.servicos {
+    width: 100%;
+}
+
+.titulo {
+    color: #0C2945;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 64px;
+    margin-bottom: 39px;
+}
+
+.txt-p, .txt-contato {
+    width: 100%;
+    max-width: 1000px;
+    color: #0C2945;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.txt-p p {
+    margin-bottom: 22px;
+}
+
+.txt-p p:last-child {
+    margin-bottom: 59px;
+}
+
+.container-img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+
+.img, .portfolio-img {
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 8px 1px #00000060;
+}
+
+.img img, .portfolio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-img .img:last-child {
+    margin-bottom: 50px;
+}
+
+/* == SOBRE == */
+
+.sobre {
+    width: 100%;
+    background-color: #E2F0FC;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.img-sobre {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    margin: 52px auto;
+}
+
+.img-sobre img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === ANUNCIO DOIS === */
+
+.anuncio-2 {
+    background-color: #0E4D7E;
+}
+
+.txt-anuncio-2 {
+    color: #E2F0FC;
+}
+
+.botao-2 {
+    background-color: #84C7F5;
+    color: #0E4D7E;
+}
+
+/* == PORTFOLIO == */
+
+.container-img-portfolio {
+    justify-content: center;
+    gap: 40px;
+}
+
+.portfolio-img {
+    margin-bottom: 25px;
+}
+
+.link-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.link-portfolio p {
+    color: #0C2945;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.link-portfolio a {
+    margin: 30px auto;
+}
+
+/* === FOOTER === */
+
+/* == CONTATO == */
+
+.contato {
+    background-color: #114169;
+    padding-top: 45px;
+}
+
+.titulo-contato {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.txt-contato {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.titulo-contato, .txt-contato {
+    color: #F1F8FE;
+}
+
+.links-contato {
+    color: #F1F8FE;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-contato p {
+    margin-bottom: 15px;
+}
+
+.links-contato a {
+    color: #F1F8FE;
+    text-decoration: none;
+    transition: border-bottom 0.1s ease-in-out 0ms;
+}
+
+.links-contato a:hover {
+    color: #84C7F5;
+    border-bottom: 2px solid #84C7F5;
+}
+
+/* == CNPJ == */
+
+.cnpj {
+    width: 100%;
+    height: 70px;
+    background-color: #0C5B98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* == DESENVOLVIDO == */
+
+.desenvolvido {
+    background-color: #ffffff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #114169;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* === RESPONSIVO === */
