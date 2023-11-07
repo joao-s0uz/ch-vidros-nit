@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+:root {
+    --fundo-topo: #000000;
+    --texto-nav: #b0b0b0;
+    --texto-boas-vindas: #f6f6f6;
+    --anuncio1: #3d3d3d;
+    --anuncio2: #d1d1d1;
+    --botao1: #d1d1d1;
+    --botao2: #3d3d3d;
+    --titulo: #000000;
+    --paragrafo: #3d3d3d;
+    --fundo2: #d1d1d1;
+    --fundo3: #454545;
+    --fundo4: #5d5d5d;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -19,7 +34,7 @@ html {
 /* === TOPO === */
 
 .topo-bg {
-    background-color:#1885CD;
+    background-color: var(--fundo-topo);
 }
 
 .topo {
@@ -36,7 +51,7 @@ html {
 }
 
 .navegacao a{
-    color: #bfe1ff;
+    color: var(--texto-nav);
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
@@ -60,7 +75,7 @@ html {
 }
 
 h1 {
-    color: #E2F0FC;
+    color: var(--texto-boas-vindas);
     font-size: 30px;
     font-weight: 600;
     width: 90%;
@@ -76,7 +91,7 @@ h1 {
 /* === ANUNCIO UM === */
 
 .anuncio-1 {
-    background-color: #83C7F5;
+    background-color: var(--anuncio2);
 }
 
 .anuncio {
@@ -88,7 +103,7 @@ h1 {
 }
 
 .txt-anuncio {
-    color: #0C2945;
+    color: var(--anuncio1);
     font-size: 22px;
     font-weight: 600;
 }
@@ -99,11 +114,11 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0E4D7E;
+    background: var(--botao2);
     text-decoration: none;
     border-radius: 10px;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.514);
-    color: #E2F0FC;
+    color: var(--botao1);
     font-size: 18px;
     font-weight: 600;
     transition: transform 0.3s ease-in-out 0ms;
@@ -122,7 +137,7 @@ h1 {
 }
 
 .titulo {
-    color: #0C2945;
+    color: var(--titulo);
     font-size: 30px;
     font-weight: 600;
     text-align: center;
@@ -133,7 +148,7 @@ h1 {
 .txt-p, .txt-contato {
     width: 100%;
     max-width: 1000px;
-    color: #0C2945;
+    color: var(--paragrafo);
     text-align: center;
     font-size: 18px;
     font-weight: 400;
@@ -159,12 +174,14 @@ h1 {
     width: 300px;
     height: 200px;
     box-shadow: 0 0 8px 1px #00000060;
+    border-radius: 5px;
 }
 
 .img img, .portfolio-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .container-img .img:last-child {
@@ -175,7 +192,7 @@ h1 {
 
 .sobre {
     width: 100%;
-    background-color: #E2F0FC;
+    background-color: var(--fundo2);
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -186,27 +203,30 @@ h1 {
     height: 300px;
     display: flex;
     margin: 52px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 1px #00000060;
 }
 
 .img-sobre img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 /* === ANUNCIO DOIS === */
 
 .anuncio-2 {
-    background-color: #0E4D7E;
+    background-color: var(--anuncio1);
 }
 
 .txt-anuncio-2 {
-    color: #E2F0FC;
+    color: var(--anuncio2);
 }
 
 .botao-2 {
-    background-color: #84C7F5;
-    color: #0E4D7E;
+    background-color: var(--botao1);
+    color: var(--botao2);
 }
 
 /* == PORTFOLIO == */
@@ -229,7 +249,7 @@ h1 {
 }
 
 .link-portfolio p {
-    color: #0C2945;
+    color: var(--paragrafo);
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -244,7 +264,7 @@ h1 {
 /* == CONTATO == */
 
 .contato {
-    background-color: #114169;
+    background-color: var(--fundo3);
     padding-top: 45px;
 }
 
@@ -285,8 +305,8 @@ h1 {
 }
 
 .links-contato a:hover {
-    color: #84C7F5;
-    border-bottom: 2px solid #84C7F5;
+    color: #e7e7e7;
+    border-bottom: 2px solid #e7e7e7;
 }
 
 /* == CNPJ == */
@@ -294,7 +314,7 @@ h1 {
 .cnpj {
     width: 100%;
     height: 70px;
-    background-color: #0C5B98;
+    background-color: var(--fundo4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,7 +333,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #114169;
+    color: #3d3d3d;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
